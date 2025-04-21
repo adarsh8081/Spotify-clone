@@ -1,0 +1,27 @@
+{
+  "name": "spotify-clone",
+  "version": "1.0.0",
+  "description": "A Spotify clone built with modern web technologies",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "devDependencies": {
+    "@types/howler": "^2.2.12",
+    "concurrently": "^8.2.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@heroicons/react": "^1.0.6",
+    "framer-motion": "^12.7.4",
+    "howler": "^2.2.4",
+    "multer": "^1.4.5-lts.2",
+    "passport": "^0.7.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "socket.io": "^4.8.1"
+  }
+}
